@@ -41,7 +41,7 @@
     function register() {
         let user = new User(username, email, phone_number, password);
 
-        fetch("http://localhost:9000/api/users", {
+        fetch("https://stanbic-poc.herokuapp.com/api/users", {
             method: 'POST',
             headers: {
                 "Content-Type": "application/json"

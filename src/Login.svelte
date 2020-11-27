@@ -71,7 +71,7 @@
             exit
         }
 
-        let auth_url = "http://localhost:9000/login"
+        let auth_url = "https://stanbic-poc.herokuapp.com/login"
         let login = new LoginDTO(username, password);
 
         fetch(auth_url, {
@@ -95,7 +95,7 @@
     }
 
     function fetch_user() {
-        fetch("http://localhost:9000/api/users", {
+        fetch("https://stanbic-poc.herokuapp.com/api/users", {
             method: 'GET',
             headers: {
                 'Authorization': 'Bearer ' + localStorage.getItem("token")
